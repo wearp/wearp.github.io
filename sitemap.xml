@@ -4,7 +4,8 @@
     
         
         <url>
-            <loc>https://willearp.com/</loc>
+            <loc>https://willearp.com/about/</loc>
+            <lastmod>2016-11-05T21:05:33+05:30</lastmod>
         </url>
         
     
@@ -17,6 +18,12 @@
         
         <url>
             <loc>https://willearp.com/tags/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>https://willearp.com/</loc>
         </url>
         
     

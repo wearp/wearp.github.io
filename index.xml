@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog</title>
+    <title>willearp</title>
     <link>https://willearp.com/</link>
-    <description>Recent content on Blog</description>
+    <description>Recent content on willearp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
 	<atom:link href="https://willearp.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://willearp.com/about/</link>
+      <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
+      
+      <guid>https://willearp.com/about/</guid>
+      <description>Hi there, I&amp;rsquo;m Will Earp. I&amp;rsquo;m a software engineer who likes building stuff for the web.
+I&amp;rsquo;m at home with Python, Flask, Django, GraphQL, PostgreSQL and Redis. But have been known to dabble in JavaScript, React, Docker, Kubernetes and so on.</description>
+    </item>
     
   </channel>
 </rss>
