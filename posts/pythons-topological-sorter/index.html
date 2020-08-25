@@ -70,7 +70,9 @@ Aug. 24, 2020
 </code></pre><p>Figure 1: Basic DAG</p>
 <p>It&rsquo;s <strong>directed</strong>. Edges connecting vertices have a direction associated with them. In a DAG, edges are sometimes called <em>arrows</em> or <em>directed edges</em>.</p>
 <p>Finally, it&rsquo;s <strong>acyclic</strong>, which means it has no directed cycles. In other words, the graph has no trail that when followed loops back on itself. So, if you start at one vertex, and follow the graph, you can&rsquo;t return to the same vertex.</p>
-<p><em>Figure 2</em> shows a very basic <strong>cyclic</strong> graph. You can follow from vertex A to B to C and back to A, and so on:</p>
+<p>Due to this acyclic property, a DAG must contain at least one <strong>topological ordering</strong> of its vertices. In simplest terms, it&rsquo;s a sequence of the vertices such that every edge is directed from earlier to later in the sequence. In <em>Figure 1</em>, two topological orderings are possible: A, B, C, D, E and A, C, B, D, E.</p>
+<p>So, <strong>Topological sorting</strong> is the algorithmic problem of finding a topological ordering given a DAG.</p>
+<p><em>Figure 2</em> shows a very basic <strong>cyclic</strong> graph. You can follow from vertex A to B to C and back to A. This is a directed cycle. For these types of graphs, no topological ordering exists and so they can&rsquo;t be topologically sorted.</p>
 <pre><code>+---+      +---+ 
 | A | &lt;--- | C |
 +---+      +---+ 
@@ -80,8 +82,6 @@ Aug. 24, 2020
   +------&gt; | B |
            +---+
 </code></pre><p>Figure 2: Basic <em>cyclic</em> graph.</p>
-<p>Due to this acyclic property, a DAG must contain at least one <strong>topological ordering</strong> of its vertices. In simplest terms, it&rsquo;s a sequence of the vertices such that every edge is directed from earlier to later in the sequence. In <em>Figure 1</em>, two topological orderings are possible: A, B, C, D, E and A, C, B, D, E.</p>
-<p>So, <strong>Topological sorting</strong> is the algorithmic problem of finding a topological ordering given a DAG.</p>
 <hr>
 <h2 id="pythons-new-topologicalsorter">Python&rsquo;s new TopologicalSorter</h2>
 <p>Python 3.9 contains its own implementation of topological sort. Called <code>TopologicalSorter</code>, it sits in the <code>graphlib</code> module (also new) in the standard library. Of course, other third-party implementations are available such as <a href="https://networkx.github.io/documentation/stable/reference/algorithms/dag.html">NetworkX&rsquo;s</a> which, as well as including a topological sort, also has a bunch of other algorithms for working with DAGs.</p>
